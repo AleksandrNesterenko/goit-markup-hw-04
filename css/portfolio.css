@@ -69,10 +69,6 @@ ul {
 
 /* header */
 
-.header {
-  border-bottom: 1px solid rgba(238, 238, 238, 1);
-}
-
 /* logo  */
 
 .header .logo {
@@ -137,10 +133,16 @@ ul {
 /* header-address */
 
 .address {
+  display: flex;
+  align-items: center;
+
   margin-left: auto;
+  /* background-color: yellow; */
 }
 
 .address .item-header {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
 
   font-style: normal;
@@ -151,12 +153,22 @@ ul {
 }
 
 .address .item-header:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
+}
+
+.address svg {
+  fill: var(--primary-text-color);
+
+  margin-right: 10px;
 }
 
 .address .item-header:hover,
 .address .item-header:focus {
   color: var(--primary-logo-color);
+}
+.item-header:hover svg,
+.item-header:focus svg {
+  fill: var(--primary-logo-color);
 }
 
 /* main */
@@ -213,10 +225,10 @@ ul {
 .project {
   flex-wrap: wrap;
 }
-/* .project > .list {
-  padding-bottom: 20px;
-} */
-
+.project .list:hover,
+.project .list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .project > .list:not(:nth-child(3n + 3)) {
   margin-right: 30px;
 }
