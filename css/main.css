@@ -525,7 +525,7 @@ ul {
 .footer .item:not(:last-child) {
   margin-right: 10px;
 }
-.icon-social svg {
+.footer .icon-social svg {
   fill: var(--primary-fon-color);
 }
 .footer .icon-social:hover,
