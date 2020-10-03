@@ -443,14 +443,20 @@ ul {
 
 .footer {
   background-color: var(--secondary-fon-color);
-  /* height: 252px; */
 }
 
 .footer > .conteiner {
-  flex-direction: column;
   align-items: flex-start;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .nav-footer {
+  margin-right: 70px;
+}
+
+.footer .social-footer {
+  padding-top: 12px;
 }
 
 /* logo  */
@@ -460,12 +466,13 @@ ul {
 }
 
 .footer .logo {
+  display: flex;
   margin-bottom: 20px;
 }
 
 /* address  */
 
-.footer-address {
+.footer .footer-address {
   flex-direction: column;
 }
 
@@ -490,13 +497,11 @@ ul {
   font-size: 14px;
   line-height: 1.71;
 }
-.footer .social {
-  flex-direction: row;
-}
 
 .footer .title {
   color: var(--primary-fon-color);
 
+  font-style: normal;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
