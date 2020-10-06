@@ -69,6 +69,10 @@ ul {
 
 /* header */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 /* logo  */
 
 .header .logo {
